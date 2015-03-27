@@ -3,7 +3,7 @@
 
 <b>Created by:</b> Nate DeHorn
 
-##User defined functions found in Lab5
+User defined functions found in Lab5
 
 Part 1a
 =======
