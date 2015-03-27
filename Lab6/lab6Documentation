@@ -1,0 +1,32 @@
+productOfPairs()
+First checks if the empty list has been passed. If so, returns the empty list. Then checks if there is just one item in the list. If so, it just returns the same list. Otherwise, it takes the first item and multiplies it by the second item (hd(XS)) then makes that the first item in the new list. It then recursively goes through and adds elements to the list in the same fashion.
+
+polyadd()
+First checks if either of the two lists passed to it are the empty list. If either of them are, it returns the other list. Otherwise, it adds the first items of each list, and then recursively calls the function on the leftover parts of the two lists (XS & YS).
+
+polydiff()
+First checks if the second list is the empty list. If it is, then the first list is returned. Then checks if the first list is the empty list. If it is, it returns the opposite sign list of the second list. For the other cases, the first items in each list are subtracted, then recursively calls polydiff on the rest of the list.
+
+polyeval()
+First checks if the first list is the empty list. If so, then 0 is returned. It then checks if the first list is an item of length 1. If so, then it just returns X. Otherwise, it takes the first item in the list and adds it to the input value multiplied by the recursive call of the rest of the list and the input value.
+
+member()
+First checks if the second list is the empty list. If so, then 0 is returned. It then checks if the first list is a list with just one element. If so, then it just returns the value that was in the list. Otherwise, it recursively calls the member function on the tail of the second list.
+
+delete()
+This function makes a list of all the elements Y from the list when Y is different than X.
+
+insert()
+This function uses the member function to check if the item is in the list already. If its not in the list, then it adds the item to the end of the list.
+
+largest()
+First checks if the tail of the list is the empty list. If it is, then it returns the head of the list. Otherwise, if the head is greater than the first item in the tail, it saves the head and recursively calls largest on the saved item and the rest of the list. Else, it discards the value and recursively calls the largest function on the rest of the list.
+
+selectionSort()
+First checks if the list is the empty list. If it is, then it returns the empty list. It then checks if the list is one value large. If so, it returns the same list. Otherwise, it finds the largest value, deletes it from the list, adds it to the final list to be returned, and recursively calls selection sort on what is left of the original list.
+
+flipSigns()
+First checks if the list is just one element. If so, it just changes the sign and returns it. Otherwise, it uses map to call flip sign on every element within the list and change its sign.
+
+truncateWords()
+First checks if the list is the empty list. If so, it returns the empty list. Otherwise, it takes a list and uses map to call truncate on each element in the passed list. Truncate is a function that takes an item and calls chop, which is the recursive function responsible for actually truncating the word.
