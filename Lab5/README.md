@@ -1,9 +1,9 @@
 # Lab 5
 <b>Introduction to Erlang - The Basics</b>
+
 <b>Created by:</b> Nate DeHorn
 
 ##User defined functions found in Lab5
-=======
 
 ```Erlang
 	fourthPower(N)
